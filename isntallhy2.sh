@@ -94,7 +94,7 @@ echo "Hysteria服务已重启。"
 
 # 步骤7: 检查服务状态和端口
 echo "检查Hysteria服务状态..."
-systemctl status hysteria-server.service
+systemctl status hysteria-server.service --no-pager
 
 echo "检查端口（UDP $user_port）..."
 ss -u -l | grep $user_port
